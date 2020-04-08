@@ -1,6 +1,7 @@
 # Unit 09 Node.js and ES6+ Homework: Good README Generator
 
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:marchij86@gmail.com)
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
 
 Create a command-line application that dynamically generates a README.md from a user's input. The application will be invoked with the following command:
 
