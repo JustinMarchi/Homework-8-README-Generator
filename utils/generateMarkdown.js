@@ -1,8 +1,31 @@
-function generateMarkdown(data) {
+function generateMarkdown(answers) {
   return `
-# ${data.title}
+  # ${answers.ProjectTitle}
 
-`;
+## Description 
+${answers.ProjectDescription}
+
+
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+
+
+## Installation
+
+${answers.Install}
+
+## Usage 
+
+${answers.Usage}
+
+---
+
+## Badges
+
+`
+;
 }
 
 module.exports = generateMarkdown;
