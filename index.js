@@ -52,7 +52,7 @@ async function init() {
         const answers = await promptUser();
         const user = await api.getUser(answers.GitHubUsername);
         const readMe = generateMarkdown(answers, user);
-        writeToFile("newREADMe.txt", readMe);
+        writeToFile("newREADMe.md", readMe);
     }catch(err) {
         console.log(err);
         
