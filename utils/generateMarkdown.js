@@ -1,5 +1,10 @@
-function generateMarkdown(answers) {
+const api = require("./api");
+
+function generateMarkdown(answers, user) {
   return `
+
+  #${user.avatar_url}
+
   # ${answers.ProjectTitle}
 
 ## Description 

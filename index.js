@@ -51,7 +51,7 @@ async function init() {
     try {
         const answers = await promptUser();
         const user = await api.getUser(answers.GitHubUsername);
-        const readMe = generateMarkdown(answers);
+        const readMe = generateMarkdown(answers, user);
         writeToFile("newREADMe.txt", readMe);
     }catch(err) {
         console.log(err);
