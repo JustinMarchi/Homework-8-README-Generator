@@ -17,6 +17,8 @@ ${answers.ProjectDescription}
 
 * [Installation](#installation)
 * [Usage](#usage)
+* [License](#license)
+* [Credits](#credits)
 
 ---
 ## Installation
@@ -29,7 +31,16 @@ ${answers.Install}
 ${answers.Usage}
 
 ---
+## License
 
+${answers.License}
+
+---
+## Credits
+
+${answers.Contributors}
+
+---
 ## Badges
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
 

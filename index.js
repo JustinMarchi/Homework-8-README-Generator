@@ -29,9 +29,38 @@ const questions = [
         type: "input",
         name: "Usage",
         message: "Please provide examples of how your project could be used."
+    },
+    {
+        type: "list",
+        name: "License",
+        message: "Choose what license you would like to use for your project.",
+        choices: [{
+            name: "GNU General Public License v3.0",
+            },
+            {
+            name: "MIT License"
+            },
+            {
+            name: "The Unlicense"
+            },
+            {
+            name: "Apache License 2.0"
+            }]
+    },
+    {
+        type: "number",
+        name: "Contributors",
+        message: "How many contributors will there be on your project?",
+        validate: validateContributors
     }
 
 ];
+
+function validateContributors(num)
+{
+   var reg = /^\d+$/;
+   return reg.test(num) || "Please enter a valid number";
+}
 
 function promptUser(){
     return inquirer.prompt(questions)
