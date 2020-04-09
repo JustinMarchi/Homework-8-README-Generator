@@ -48,7 +48,7 @@ const questions = [
             }]
     },
     {
-        type: "number",
+        type: "input",
         name: "Contributors",
         message: "How many contributors will there be on your project?",
         validate: validateContributors
@@ -82,6 +82,8 @@ async function init() {
         const user = await api.getUser(answers.GitHubUsername);
         const readMe = generateMarkdown(answers, user);
         writeToFile("newREADMe.md", readMe);
+        console.log("**README file successfully created!**");
+        
     }catch(err) {
         console.log(err);
         

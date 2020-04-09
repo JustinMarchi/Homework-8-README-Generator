@@ -10,7 +10,6 @@ const api = {
       method: 'GET'}) 
 
     const user = res.data
-    console.log(user);
     return user;
     
   }
