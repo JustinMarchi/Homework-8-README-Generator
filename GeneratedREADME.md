@@ -1,17 +1,14 @@
-const api = require("./api");
 
-function generateMarkdown(answers, user) {
-  return `
-  ![](${user.avatar_url})
-  # ${user.name}
-  ### [E-mail Me Here!](${user.email})
+  ![](https://avatars1.githubusercontent.com/u/39196696?v=4)
+  # Justin Marchi
+  ### [E-mail Me Here!](Marchij86@gmail.com)
 ---
-  # ${answers.ProjectTitle}
+  # README Generator
 
 
 ## Description 
 ---
-${answers.ProjectDescription}
+Generate a README for any GitHub project through a series of questions and generate a formatted Markdown file.
 
 ## Table of Contents
 ---
@@ -27,22 +24,22 @@ ${answers.ProjectDescription}
 ---
 ## Installation
 
-${answers.Install}
+First, clone the repo to your local machine. Then, within the cloned folder run 'npm install' to install the necessary packages.
 
 ---
 ## Usage 
 
-${answers.Usage}
+This provides a quick and easy way to generate a formatted README file for any GitHub project.
 
 ---
 ## License
 
-${answers.License}
+MIT License
 
 ---
 ## Credits
 
-${answers.Contributors} Contributors
+5 Contributors
 
 ---
 ## Badges
@@ -52,10 +49,10 @@ ${answers.Contributors} Contributors
 ## FAQ
 
 - **How do I initialize the code?**
-  - ${answers.FAQ1}
+  - Run 'node index.js' within the local folder in terminal.
 
 - **How can I contact you if I have any further questions?**
-  - ${user.email}
+  - Marchij86@gmail.com
 
 ---
 ## Contributing
@@ -189,8 +186,3 @@ For answers to common questions about this code of conduct, see the FAQ at
 https://www.contributor-covenant.org/faq. Translations are available at
 https://www.contributor-covenant.org/translations.
 
-`
-;
-}
-
-module.exports = generateMarkdown;

@@ -52,6 +52,11 @@ const questions = [
         name: "Contributors",
         message: "How many contributors will there be on your project?",
         validate: validateContributors
+    },
+    {
+        type: "input",
+        name: "FAQ1",
+        message: "How do you initialize the project?"
     }
 
 ];
@@ -81,7 +86,7 @@ async function init() {
         const answers = await promptUser();
         const user = await api.getUser(answers.GitHubUsername);
         const readMe = generateMarkdown(answers, user);
-        writeToFile("newREADMe.md", readMe);
+        writeToFile("GeneratedREADME.md", readMe);
         console.log("**README file successfully created!**");
         
     }catch(err) {
